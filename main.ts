@@ -1,7 +1,7 @@
 
-import { Blockchain } from "./blockchain";
-import { Transaction } from "./transaction";
-import { ec as EC } from "elliptic";
+import {Blockchain} from './blockchain';
+import {Transaction} from './transaction';
+import {ec as EC} from 'elliptic';
 const ec = new EC('secp256k1');
 
 const key = ec.keyFromPrivate('adbce7d5137efb40db1ea2bc07a3f87f4a727026a9464addd878e3af30a7ce65');
