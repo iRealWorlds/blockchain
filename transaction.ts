@@ -3,9 +3,9 @@ import {ec as EC} from 'elliptic';
 const ec = new EC('secp256k1');
 
 export class Transaction {
-    public signature: string;
+    public signature: string|null = null;
 
-    constructor(public from: string, public to: string, public amount: number) {
+    constructor(public from: string|null, public to: string, public amount: number) {
     }
 
     calculateHash() {
